@@ -1,0 +1,3 @@
+Text file created on 11/07/2024 at 8:08 PM
+
+This is a txt file with represents a new post data that will be fetched in some place. 😏
