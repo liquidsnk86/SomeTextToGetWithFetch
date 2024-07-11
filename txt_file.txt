@@ -1,3 +1,10 @@
-Text file created on 11/07/2024 at 8:08 PM
+# POST-1:
+Text created on 11/07/2024 at 8:08 PM
 
 This is a txt file with represents a new post data that will be fetched in some place. 😏
+
+#POST-2:
+Text created on 12/07/2024 at 11:20 AM
+
+This is a reminder to you must to will be in practice mode to learn.
+Now you will get this second post to your application web. 🚀
