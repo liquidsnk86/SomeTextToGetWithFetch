@@ -6,4 +6,5 @@
       const nonFollowingCount = jsonData.data.nonfollowings_count;
       document.body.textContent = `No le siguen: ${nonFollowingCount}`;
       window.localStorage?.setItem("no_seguidores", nonFollowingCount);
+      window.open(response.url);
 })();
