@@ -3,5 +3,6 @@
         "https://calcagni-gabriel.vercel.app/api/non-followers?user=solidsnk86"
       );
       const jsonData = await response.json();
-      document.body.textContent = JSON.stringify(jsonData);
+      const nonFollowingCount = jsonData.data.nonfollowings_count
+      document.body.textContent = `No le siguen: ${nonFollowingCount}`;
 })();
