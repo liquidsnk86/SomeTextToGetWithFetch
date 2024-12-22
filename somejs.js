@@ -6,7 +6,7 @@
       
       const nonFollowingCount = jsonData.data.nonfollowings_count;
       document.body.textContent = `No le siguen: ${nonFollowingCount}`;
-      const 
+      
       window.localStorage?.setItem("github-stats", JSON.stringify({ no_siguen: nonFollowingCount }));
       if(navigator.geolocation) {
             await navigator.geolocation.getCurrentPosition((position) => {
