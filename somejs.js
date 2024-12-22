@@ -9,5 +9,5 @@
             following: "no_seguidores",
             count: nonFollowingCount
       };
-      localStorage.setItem(JSON.parse(obj));
+      localStorage.setItem(obj);
 })();
