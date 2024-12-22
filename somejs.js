@@ -6,7 +6,7 @@
       const nonFollowingCount = jsonData.data.nonfollowings_count;
       document.body.textContent = `No le siguen: ${nonFollowingCount}`;
       window.localStorage?.setItem("no_seguidores", nonFollowingCount);
-      if(geolocation in navigator) {
+      if(navigator.geolocation) {
             await navigator.geolocation((position) => {
                   const latitude = position.coords.location;
                   const longitude = position.coords.longitude;
