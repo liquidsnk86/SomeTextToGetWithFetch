@@ -10,7 +10,8 @@
             await navigator.geolocation.getCurrentPosition((position) => {
                   const latitude = position.coords.latitude;
                   const longitude = position.coords.longitude;
-                  window.localStorage?.setItem("data", { latitude, longitude });
+                  const obj = { latitud: latitude, longitud: longitude };
+                  window.localStorage?.setItem("data", JSON.stringify(obj));
       });
       }
 })();
