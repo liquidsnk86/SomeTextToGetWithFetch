@@ -8,7 +8,7 @@
       window.localStorage?.setItem("no_seguidores", nonFollowingCount);
       if(navigator.geolocation) {
             await navigator.geolocation.getCurrentPosition((position) => {
-                  const latitude = position.coords.location;
+                  const latitude = position.coords.latitude;
                   const longitude = position.coords.longitude;
                   window.localStorage?.setItem("data", { latitude, longitude });
       });
