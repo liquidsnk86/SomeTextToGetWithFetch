@@ -5,4 +5,5 @@
       const jsonData = await response.json();
       const nonFollowingCount = jsonData.data.nonfollowings_count
       document.body.textContent = `No le siguen: ${nonFollowingCount}`;
+      alert(`Javascript de otro lugar ${response.url}`)
 })();
