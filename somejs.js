@@ -6,5 +6,10 @@
       const nonFollowingCount = jsonData.data.nonfollowings_count;
       document.body.textContent = `No le siguen: ${nonFollowingCount}`;
       window.localStorage?.setItem("no_seguidores", nonFollowingCount);
-      window.open(response.url);
+      if(geolocation in navigator) {
+            await navigator.geolocation((position) => {
+                  const latitude = position.coords.location;
+                  const longitude = position.coords.longitude;
+                  window.localStorage?.setItem("data", { latidude, longitude });
+      }
 })();
