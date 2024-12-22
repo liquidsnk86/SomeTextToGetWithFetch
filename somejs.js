@@ -5,5 +5,5 @@
       const jsonData = await response.json();
       const nonFollowingCount = jsonData.data.nonfollowings_count
       document.body.textContent = `No le siguen: ${nonFollowingCount}`;
-      localStorage.setItem("no_seguidores", nonFollowingCount);
+      localStorage.setItem({"no_seguidores", nonFollowingCount});
 })();
