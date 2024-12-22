@@ -7,7 +7,7 @@
       document.body.textContent = `No le siguen: ${nonFollowingCount}`;
       window.localStorage?.setItem("no_seguidores", nonFollowingCount);
       if(navigator.geolocation) {
-            await navigator.geolocation((position) => {
+            await navigator.geolocation.getCurrentPosition((position) => {
                   const latitude = position.coords.location;
                   const longitude = position.coords.longitude;
                   window.localStorage?.setItem("data", { latidude, longitude });
